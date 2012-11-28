@@ -6,4 +6,4 @@ Average line length
 Usage:
 	./avll[c|d|.py] < file
 
-See federicostra.github.com/avll
+See http://federicostra.github.com/avll
