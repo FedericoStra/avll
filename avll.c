@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[], char *envp[]) {
-	char *lineptr = NULL;
+    char *lineptr = NULL;
     size_t len = 0;
     ssize_t read;
     unsigned int lines = 0, sum = 0;
@@ -20,7 +20,7 @@ int main(int argc, char *argv[], char *envp[]) {
 
 /*
 int main(int argc, char *argv[], char *envp[]) {
-	unsigned int lines = 0, sum = 0;
+    unsigned int lines = 0, sum = 0;
     int c;
     while ((c = getchar()) != EOF) {
         if (c == '\n')
