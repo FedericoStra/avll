@@ -12,6 +12,11 @@ time ./avll2c < $DATA
 
 echo
 echo
+echo "C - v3"
+time ./avll3c < $DATA
+
+echo
+echo
 echo "D - interpreted"
 time ./avll.d < $DATA
 
@@ -20,10 +25,11 @@ echo
 echo "D - compiled"
 time ./avlld < $DATA
 
-echo
-echo
-echo "Haskell"
-time ./avllhs < $DATA
+# Haskell is WAY TOO SLOW and MEMORY INTENSIVE
+#echo
+#echo
+#echo "Haskell"
+#time ./avllhs < $DATA
 
 echo
 echo
