@@ -14,5 +14,5 @@ def ldatagen(nl=100, ll=40):
 
 if __name__ == "__main__":
     f = open("some-data.txt", "w")
-    f.write(sdatagen(1000000, 80))
+    f.write(sdatagen(100000, 80))
     f.close()

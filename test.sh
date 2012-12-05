@@ -22,6 +22,11 @@ time ./avlld < $DATA
 
 echo
 echo
+echo "Haskell"
+time ./avllhs < $DATA
+
+echo
+echo
 echo "Python - v1"
 time ./avll1.py < $DATA
 

@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -O3
 
-PROGRAMS = avll1c avll2c avlld
+PROGRAMS = avll1c avll2c avlld avllhs
 
 all: $(PROGRAMS)
 
@@ -12,6 +12,9 @@ avll2c: avll2.c
 avlld: avll.d
 	dmd $^ -of$@ -O
 	rm avlld.o
+avllhs: avll.hs
+	ghc $(CFLAGS) -o $@ $^
+	rm avll.hi avll.o
 
 .PHONY: clean
 clean:
